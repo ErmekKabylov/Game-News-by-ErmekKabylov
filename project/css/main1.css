@@ -1,0 +1,477 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	max-height: 7000px;
+	background-color: black;
+	height: 100%;
+	font-family: "Play", sans-serif;
+	font-size: 16px;
+}
+.container{
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+img{
+	max-width: 100%;
+}
+header{
+	margin: 0px auto;
+	display: flex;
+	align-items: center;
+	padding-bottom: 0px;
+	max-height: 80px;
+	height: 100%;
+	width: 100%;
+}
+header .logo{
+	max-width: 250px;
+	min-width: 70px;
+}
+header .menu_top{
+	list-style-type: none;
+	margin: 10px 10px;
+	min-width: 550px;
+}
+header .menu_top li{
+	display: inline-block;
+	margin-right: 60px;
+}
+header .menu_top li a{ 
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	transition: .4s ease;
+}
+header .menu_top li a:hover{
+	color: #5794B0;
+}
+header .none{
+	max-height: 70px;
+	height: 100%;
+	max-width: 500px;
+	min-width: 100px;
+	width: 100%;
+}
+header .btn{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+.burger{
+	margin: 0px 0px;
+	width: 450px; 
+	background-color: #000;
+	position: relative; 
+	text-align: center;
+	height: 20px;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	visibility: inherit;
+	float: right;
+	}  
+#check-menu{
+	display: none;
+}
+
+label{
+	display: block; 
+	position: absolute;
+	top: 0;
+	left: 9; 
+	width: 100%; 
+	height: 100%; 
+	cursor: pointer; 
+	line-height: 40px;
+	z-index: 2;
+	} 
+.burgerline{
+	position: absolute; 
+	top: 6px; 
+	right: 10px; 
+	width: 35px; 
+	height: 2px; 
+	background-color: #FFF;
+	transition: .5s all;
+	} 
+.lineb2, .lineb3{
+	top: 18px;
+}
+.lineb4{
+	top: 28px;
+	} 
+.main-menu {
+	display: block;
+	position: absolute; 
+	width: 100%; 
+	bottom: 0; 
+	left: 0;
+	transform: translateY(100%);
+	max-height: 0;
+	font-size: 0;
+	overflow: hidden;
+	transition: .5s all;
+}
+.burger a{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	border-top: 1px solid rgba(255, 255, 255, .3);
+	background-color: #000;
+}
+#check-menu:checked ~ .main-menu{
+	max-height: 500px;
+	font-size: 15px;
+}
+#check-menu:checked ~ .lineb1{
+	display: none;
+}
+#check-menu:checked ~ .lineb2{
+	transform: rotate(45deg);
+}
+#check-menu:checked ~ .lineb3{
+	transform: rotate(-45deg);
+}
+#check-menu:checked ~ .lineb4{
+	display: none;
+}
+.underheader_line{
+	width: 100%;
+	max-height: 30px;
+	height: 100%;
+	background-color: gray;
+}
+nav{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+nav .menu_undertop{
+	list-style-type: none;
+	margin: 3px 5px;
+}
+nav .menu_undertop li{
+	display: inline-block;
+	margin-right: 60px;
+}
+nav .menu_undertop li .VG{
+  color: #004D08 ;
+  font-weight: bold;
+}
+.VG{
+  color: #004D08 ;
+}
+nav .menu_undertop li .MMORPG{
+ color: #8A0000;
+ font-weight: bold;
+}
+.MMORPG{
+ color: #8A0000;
+}
+nav .menu_undertop li .Mobile{
+ color:#886200 ;
+ font-weight: bold;
+}
+.Mobile{
+ color:#886200 ;
+ }
+nav .menu_undertop li .Anime{
+ color:#1A0065 ;
+ font-weight: bold;
+}
+.Anime{
+ color:#1A0065 ;
+ }
+nav .menu_undertop li .Ind{
+ color:#6595B6 ;
+ font-weight: bold;
+}
+.Ind{
+ color:#6595B6 ;
+ }
+nav .menu_undertop li .InK{
+ color:#57004E ;
+ font-weight: bold;
+}
+.InK{
+ color:#57004E ;
+ }
+nav .menu_undertop li .Film{
+ color:#343D00 ;
+ font-weight: bold;
+}
+.Film{
+ color:#343D00 ;
+ }
+.VG, .MMORPG, .Mobile, .Anime, .Ind, .InK, .Film{
+	text-decoration: none;
+}
+.BG{
+	margin: 10px auto;
+	max-height: 700px;
+	min-height: 620px;
+	background-color: rgba(196, 196, 196, 0.5); 
+	display: grid;
+	grid-template-columns: 60% 30%  ;
+}
+.BG .PUBG1{
+	padding: 15px;
+	position: relative;
+	width: 100%;
+	max-height: 350px;
+	transition: .4s ease;
+	grid-column: 1/2;
+	grid-auto-rows: minmax(300px, 350);
+}
+.BG .PUBG1:hover{
+	font-weight: bold;
+}
+.BG .PUBG1 img{
+	border-radius: 15px;
+}
+.BG .PUBG1 h1{
+	position: absolute;
+	width: 100%;
+	max-width: 620px;
+	top	: 250px;
+	left: 17px;
+	width: 100%;
+	color: white;
+	font-size: 18px;
+}
+.BG .PUBG1 .next{
+	position: absolute;
+	top	: 300px;
+	left: 17px;
+	color: #D88100;
+	font-size: 18px;
+	text-decoration: none;
+}
+.BG .new{
+	height: 100%;
+	max-width: 250px;
+	width: 100%;
+	margin: 15px auto;
+	grid-column: 2;
+	grid-row: 1/3;
+}
+.BG .new2{
+	display: grid;
+	height: 100%;
+	grid-template-columns: 33% 33% 33%;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 15px;
+	align-items: start;
+}
+.warcraft1{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	justify-content: center;
+}
+.warcraft1:hover{
+	font-weight: bold;
+	color: #5794B0;
+}
+.warcraft1 img{
+	border-radius: 10px;
+	max-height: 100px;
+	height: 100%;
+	max-width: 170px;
+	width: 100%;
+}
+.VGh1{
+	top	: 200px;
+	left: 10px;
+	width: 100%;
+	color: #004D08;
+	font-size: 15px;
+	text-decoration: none;
+}
+.name1{
+	text-decoration: none;
+	color: white;
+
+	transition: .4s ease;
+}
+.name1:hover{
+	color: #5794B0;
+}
+.name1 p{
+	color: white;
+	font-size: 15px;
+	margin: 15px 0;	
+	max-width: 170px;
+	width: 100%;
+	line-height: 15px;
+}
+.PUBG2{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%px;
+}
+.PUBG2:hover{
+	font-weight: bold;
+	color: #5794B0;
+}
+.PUBG2 img{
+	border-radius: 10px;
+	max-height: 100px;
+	max-width: 170px;
+	height: 100%;
+	width: 100%;
+
+}
+.Brain2{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%px;
+}
+.Brain2:hover{
+	font-weight: bold;
+	color: #5794B0;
+}
+.Brain2 img{
+	border-radius: 10px;
+	max-height: 100px;
+	max-width: 170px;
+	height: 100%;
+	width: 100%;
+}
+.TABS1{
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	width: 100%px;
+}
+.TABS1:hover{
+	font-weight: bold;
+	color: #5794B0;
+
+}
+.TABS1 img{
+	border-radius: 10px;
+	max-height: 100px;
+	max-width: 170px;
+	height: 100%;
+	width: 100%;
+}
+.fort1{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+.fort1:hover{
+	font-weight: bold;
+	color: #5794B0;
+}
+.fort1 img{
+	border-radius: 10px;
+	max-height: 100px;
+	max-width: 170px;
+	height: 100%;
+	width: 100%;
+}
+.block2{
+	margin: 10px auto;
+	max-height: 700px;
+	height: 100%;
+	background-color: rgba(196, 196, 196, 0.5);
+}
+.block2 td{
+	max-width: 250px;
+}
+.block2 table{
+	max-height: 600px;
+	max-width: 1000px;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+.bl2_new hr{
+	margin: 0;
+}
+.listnew{
+	max-width: 300px;
+	width: 100%;
+}
+.listnew .linew{
+	list-style-type: none;
+	padding: 0;
+	margin-top: 0;
+}
+.listnew li .today{ 
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+	transition: .4s ease;
+	color: white;
+	margin-top: 0;
+}
+.listnew li a{ 
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+	transition: .4s ease;
+	color: white;
+	margin: 20px 0;
+}
+.listnew li a:hover{
+	color: black;
+} 
+.warcraft1{
+	margin: 0px 20px;
+	max-width: 250px;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+	padding-left: 10px;
+}
+.TABS1{
+	margin: 0px 20px;
+	max-width: 250px;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+}
+.fort1{
+	margin: 0px 20px;
+	max-width: 250px;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+}
+.PUBG2{
+	margin: 0px 20px;
+	max-width: 250px;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+}
+.Filmh1{
+	top	: 200px;
+	left: 5px;
+	width: 100%;
+	color:#343D00 ;
+	font-size: 15px;
+	text-decoration: none;
+}
+.Brain2{
+	margin: 0px 20px;
+	max-width: 250px;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+}

@@ -1,0 +1,880 @@
+html, body{
+	max-height: 1000px;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+img{
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	font-family: "Play", sans-serif;
+	overflow-x: hidden;
+	opacity: 1;
+	margin: 0;
+	padding: 0;
+}
+.BG{
+	background-image: url(img/S.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	max-height: 850px;
+	width: 100%;
+	height: 100%;
+}
+header{
+	margin: 0px auto;
+	display: flex;
+	align-items: center;
+	padding-bottom: 0px;
+	max-height: 80px;
+	height: 100%;
+	max-width: 1300px;
+	width: 100%;
+	background-color: black;
+}
+header .logo{
+	max-width: 250px;
+	min-width: 70px;
+	position: all;
+}
+header .menu_top{
+	list-style-type: none;
+	margin: 10px 5px;
+	min-width: 550px;
+}
+header .menu_top li{
+	display: inline-block;
+	margin-right: 60px;
+}
+header .menu_top li a{ 
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	transition: .4s ease;
+}
+header .menu_top li a:hover{
+	color: #5794B0;
+}
+header .none{
+	max-height: 70px;
+	height: 100%;
+	max-width: 500px;
+	min-width: 100px;
+	width: 100%;
+}
+header .button{
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	margin-right: 10px;
+	max-width: 80px;
+	width: 100%;
+	max-height: 70px;
+	height: 100%;
+	justify-content: flex-end;
+}
+header .button img{
+	transition: .3s ease;
+}
+header .button img:hover{
+	max-width: 42px;
+	width: 100%;
+	max-height: 42spx;
+	height: 100%;
+}
+header .btn{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+.underheader_line{
+	width: 100%;
+	max-height: 30px;
+	height: 100%;
+	background-color: gray;
+	margin-top: 0px;
+}
+nav{
+	margin: 0px auto;
+	display: flex;
+	align-items: center;
+	max-width: 1350px;
+	width: 100%;
+}
+nav .menu_undertop{
+	list-style-type: none;
+	margin: 3px 5px;
+}
+nav .menu_undertop li{
+	display: inline-block;
+	margin-right: 60px;
+}
+nav .menu_undertop li .VG{
+  color: #004D08 ;
+  font-weight: bold;
+}
+.VG{
+  color: #004D08 ;
+}
+nav .menu_undertop li .MMORPG{
+ color: #8A0000;
+ font-weight: bold;
+}
+.MMORPG{
+ color: #8A0000;
+}
+nav .menu_undertop li .Mobile{
+ color:#886200 ;
+ font-weight: bold;
+}
+.Mobile{
+ color:#886200 ;
+ }
+nav .menu_undertop li .Anime{
+ color:#1A0065 ;
+ font-weight: bold;
+}
+.Anime{
+ color:#1A0065 ;
+ }
+nav .menu_undertop li .Ind{
+ color:#6595B6 ;
+ font-weight: bold;
+}
+.Ind{
+ color:#6595B6 ;
+ }
+nav .menu_undertop li .InK{
+ color:#57004E ;
+ font-weight: bold;
+}
+.InK{
+ color:#57004E ;
+ }
+nav .menu_undertop li .Film{
+ color:#343D00 ;
+ font-weight: bold;
+}
+.Film{
+ color:#343D00 ;
+ }
+.VG, .MMORPG, .Mobile, .Anime, .Ind, .InK, .Film{
+	text-decoration: none;
+}
+nav .menu_undertop li a{ 
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+	transition: .4s ease;
+}
+nav .menu_undertop li a:hover{
+	color: white;
+}
+.burger{
+	margin: 0px 0px;
+	width: 320px; 
+	background-color: #000;
+	position: relative; 
+	text-align: center;
+	height: 20px;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	visibility: hidden;
+	float: right;
+	}  
+#check-menu{
+	display: none;
+}
+
+label{
+	display: block; 
+	position: absolute;
+	top: 0;
+	left: 9; 
+	width: 100%; 
+	height: 100%; 
+	cursor: pointer; 
+	line-height: 40px;
+	z-index: 2;
+	} 
+.burgerline{
+	position: absolute; 
+	top: 6px; 
+	right: 10px; 
+	width: 35px; 
+	height: 2px; 
+	background-color: #FFF;
+	transition: .5s all;
+	} 
+.lineb2, .lineb3{
+	top: 18px;
+}
+.lineb4{
+	top: 28px;
+	} 
+.main-menu {
+	display: block;
+	position: absolute; 
+	width: 100%; 
+	bottom: 0; 
+	left: 0;
+	transform: translateY(100%);
+	max-height: 0;
+	font-size: 0;
+	overflow: hidden;
+	transition: .5s all;
+}
+.burger a{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	border-top: 1px solid rgba(255, 255, 255, .3);
+	background-color: #000;
+}
+#check-menu:checked ~ .main-menu{
+	max-height: 500px;
+	font-size: 15px;
+}
+#check-menu:checked ~ .lineb1{
+	display: none;
+}
+#check-menu:checked ~ .lineb2{
+	transform: rotate(45deg);
+}
+#check-menu:checked ~ .lineb3{
+	transform: rotate(-45deg);
+}
+#check-menu:checked ~ .lineb4{
+	display: none;
+}
+.BG{
+		margin-bottom: 120px;
+}
+.BG .nope{
+	width: 100%;
+	max-height: 100px;
+	height: 100%;
+}
+section, .block3, .footerend{
+	max-width: 1100px;
+	width: 100%;
+}
+.BG section{
+	margin: 10px auto;
+	max-height: 600px;
+	height: 100%;
+	background-color: rgba(196, 196, 196, 0.5); 
+}
+.BG section table{
+	max-height: 600px;
+	height: 100%;
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+}
+.BG section td{
+	padding: 10px 10px;
+}
+.BG section td .PUBG1{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	transition: .4s ease;
+}
+.BG section td .PUBG1:hover{
+	font-weight: bold;
+}
+.BG section td .PUBG1 img{
+	border-radius: 15px;
+}
+.BG section td .PUBG1 h1{
+	position: absolute;
+	top	: 200px;
+	left: 10px;
+	width: 100%;
+	color: white;
+	font-size: 18px;
+}
+.BG section td .PUBG1 .next{
+	position: absolute;
+	top	: 270px;
+	left: 10px;
+	color: #D88100;
+	font-size: 18px;
+	text-decoration: none;
+}
+.BG section td .news1 div{
+	height: 15%;
+	width: 80%;
+}
+ .BG section td .news1 hr{
+ 	margin: 0;
+ }
+.warcraft1{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%px;
+}
+.warcraft1:hover{
+	font-weight: bold;
+	color: #5794B0;
+}
+.warcraft1 img{
+	border-radius: 10px;
+	max-height: 100px;
+	height: 100%;
+	max-width: 170px;
+	width: 100%;
+}
+.VGh1{
+	top	: 200px;
+	left: 10px;
+	width: 100%;
+	color: #004D08;
+	font-size: 15px;
+	text-decoration: none;
+}
+.name1{
+	text-decoration: none;
+	color: white;
+
+	transition: .4s ease;
+}
+.name1:hover{
+	color: #5794B0;
+}
+.name1 p{
+	top	: 5px;
+	left: 10px;
+	color: white;
+	font-size: 15px;
+	margin: 0;	
+	max-width: 170px;
+	width: 100%;
+	line-height: 15px;
+}
+.PUBG2{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%px;
+}
+.PUBG2:hover{
+	font-weight: bold;
+	color: #5794B0;
+}
+.PUBG2 img{
+	border-radius: 10px;
+	max-height: 100px;
+	max-width: 170px;
+	height: 100%;
+	width: 100%;
+
+}
+.Brain2{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%px;
+}
+.Brain2:hover{
+	font-weight: bold;
+	color: #5794B0;
+}
+.Brain2 img{
+	border-radius: 10px;
+	max-height: 100px;
+	max-width: 170px;
+	height: 100%;
+	width: 100%;
+}
+.TABS1{
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 0;
+	position: relative;
+	width: 100%px;
+}
+.TABS1:hover{
+	font-weight: bold;
+	color: #5794B0;
+
+}
+.TABS1 img{
+	border-radius: 10px;
+	max-height: 100px;
+	max-width: 170px;
+	height: 100%;
+	width: 100%;
+}
+.fort1{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+.fort1:hover{
+	font-weight: bold;
+	color: #5794B0;
+}
+.fort1 img{
+	border-radius: 10px;
+	max-height: 100px;
+	max-width: 170px;
+	height: 100%;
+	width: 100%;
+}
+.BG1{
+	background-image: url(img/S1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	max-height: 850px;
+	width: 100%;
+	height: 100%;
+}
+.BG1 .block2{
+	margin: 10px auto;
+	max-height: 700px;
+	height: 100%;
+	background-color: rgba(196, 196, 196, 0.5);
+}
+.BG1 .block2 td{
+	max-width: 250px;
+}
+.BG1 .block2 table{
+	max-height: 600px;
+	max-width: 1000px;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+.BG1 .bl2_new hr{
+	margin: 0;
+}
+.BG1 .listnew{
+	max-width: 300px;
+	width: 100%;
+}
+.BG1 .listnew .linew{
+	list-style-type: none;
+	padding: 0;
+	margin-top: 0;
+}
+.BG1 .listnew li .today{ 
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+	transition: .4s ease;
+	color: white;
+	margin-top: 0;
+}
+.BG1 .listnew li a{ 
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+	transition: .4s ease;
+	color: white;
+	margin: 20px 0;
+}
+.BG1 .listnew li a:hover{
+	color: black;
+} 
+.BG1 .warcraft1{
+	margin: 0px 20px;
+	max-width: 250px;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+	padding-left: 10px;
+}
+.BG1 .TABS1{
+	margin: 0px 20px;
+	max-width: 250px;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+}
+.BG1 .fort1{
+	margin: 0px 20px;
+	max-width: 250px;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+}
+.BG1 .PUBG2{
+	margin: 0px 20px;
+	max-width: 250px;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+}
+.Filmh1{
+	top	: 200px;
+	left: 5px;
+	width: 100%;
+	color:#343D00 ;
+	font-size: 15px;
+	text-decoration: none;
+}
+.BG1 .Brain2{
+	margin: 0px 20px;
+	max-width: 250px;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+}
+.BG2{
+	background-image: url(img/BG1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	max-height: 850px;
+	width: 100%;
+	height: 100%;
+}
+.BG2 .block3{
+	margin: 10px auto;
+	max-height: 700px;
+	height: 100%;
+	background-color: rgba(196, 196, 196, 0);
+}
+.BG2 .block3 article{
+	max-width: 600px;
+	width: 100%;
+	margin: 10px auto;
+	max-height: 700px;
+	height: 100%;
+	background-color: rgba(196, 196, 196, 0.5);
+	float: left;
+}
+.BG2 .block3 aside{
+	max-width: 470px;
+	margin: 10px auto;
+	max-height: 700px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(196, 196, 196, 0.5);
+	float: right;
+}
+.BG2 .block3 article table{
+	max-height: 700px;
+	max-width: 500px;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+}
+.Vid1{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	max-height: 350px;
+	height: 100%;
+}
+.Vid1 img{
+	border-radius: 10px;
+	max-height: 300px;
+	max-width: 600px;
+	height: 100%;
+	width: 100%;
+}
+.BG2 article table td{
+	padding: 0 5px;
+}
+.BG2 article table h1{
+	margin: 0;
+}
+.block3 article a p{
+		min-height: 200px;
+		min-width: 300px;
+	}
+.BG2 .block3 article table .name1 p{
+	font-size: 20px;
+}
+.BG2 article table input{
+	max-width: 500px;
+	margin: 0;
+	max-height: 100px;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+}
+.BG2 article .sent{
+	max-width: 100px;
+	max-height: 50px;
+	height: 100%;
+	width: 100%;
+	font-family: "Play", sans-serif;
+	transition: .5s ease;
+	font-weight: bold;
+}
+.BG2 article .sent:hover{
+	color: white;
+	background-color: #D88100;;
+}
+.VID2 img{
+	border-radius: 10px;
+	max-height: 150px;
+	max-width: 300px;
+	height: 100%;
+	width: 100%;
+}
+.BG2 aside .form1{
+	margin: 50px 30px;
+	max-width: 400px;
+	max-height: 450px;
+	height: 100%;
+	width: 100%;
+}
+.BG2 aside .form1 input{
+	max-width: 400px;
+	max-height: 40px;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.BG2 aside .form1 .button3{
+	font-family: "Play", sans-serif;
+	transition: .5s ease;
+	font-weight: bold;
+}
+.BG2 aside .form1 .button3:hover{
+	color: white;
+	background-color: #D88100;;
+}
+footer{
+	margin: 0px auto;
+	display: flex;
+	align-items: center;
+	padding-bottom: 0px;
+	max-height: 70px;
+	height: 100%;
+	max-width: 1100px;
+	width: 100%;
+	background-color: black;
+	margin-top: 10px;
+}
+footer .footerend{
+	margin-top: 15px;
+	position:all;
+	max-width: 80px;
+	max-height: 80px;
+	height: 100%;
+	width: 100%;
+	margin-right: 10px;
+}
+footer .menu_top{
+	list-style-type: none;
+	margin: 10px 0px;
+	padding: 0;
+	max-width: 700px;
+	width: 100%;
+}
+footer .menu_top li{
+	display: inline-block;
+	margin-right: 60px;
+}
+footer .menu_top li a{ 
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	transition: .4s ease;
+}
+footer .menu_topsectionver{
+	color: #D88100;
+}
+footer .none{
+	max-height: 70px;
+	max-width: 700px;
+	height: 100%;
+	width: 100%;
+}
+footer .sites{
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	float: right;
+	max-width: 200px;
+	width: 100%;
+}
+footer .sites .Face, .Twit, .Inst, .YT{
+	border-radius: 5px;
+	margin-right: 5px;
+}
+@media (max-width:1115px){
+nav{
+		display: none;
+	}
+.burger{
+		visibility: inherit;
+	}
+	.underheader_line{
+		background-color: black;
+	}
+	.BG2 .block3 {
+		max-height: 1500px;
+	}
+	.BG2 .block3 article{
+		max-width: 1100px;
+		float: none;
+	}
+	.BG2 .block3 aside{
+	max-width: 1100px;
+	margin: 10px auto;
+	max-height: 400px;
+	height: 100%;
+	width: 100%;
+}
+.BG2 aside .form1{
+	margin: 50px auto;
+
+}
+}
+@media (max-width:900px){
+	html, body{
+		max-height: 2000px;
+	}
+	.BG{
+		max-height: 900px;
+		margin-bottom: 20px;
+	}
+	header .btn{
+		display: none;
+	}
+	header .none{
+		min-width: 0;
+	}
+	header .button{
+		max-width: 42px;
+	width: 100%;
+	max-height: 42spx;
+	height: 100%;
+	}
+	section, .block2, .block3{
+		max-width: 700px;
+	} 
+	.news1{
+		display: none;
+	}
+	.undnew{
+		display: none;
+	}
+	.undnewtext{
+		visibility: inherit;
+	}
+	.block2 .Brain2, .TABS1{
+		display: none;
+	}
+	footer{
+		max-width: 700px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	footer .footerend{
+		display: none;
+	}
+}
+@media (max-width:750px){
+	header ul{
+		display: none;
+	}
+	header .none{
+		max-width: 700%;
+	}
+	.nope{
+		max-height: 50;
+	} 
+	.block2{
+		margin-top: 400px;
+	}
+}
+@media (max-width:480px){
+	html, body{
+		max-height: 2000px;
+	}
+	.BG{
+		max-height: 900px;
+		margin-bottom: 0;
+	}
+		section{
+		max-height: 500px;
+	}
+	.PUBG1 img{
+		width: 320px;
+		height: 160px;
+	}
+	.PUBG11{
+		max-height: 300px;
+	}
+	section .warcraft1, .fort1{
+		max-height: 200px;
+		height: 100%;
+	}
+	header .btn{
+		display: none;
+	}
+	header .none{
+		min-width: 0;
+	}
+	header .button{
+	max-width: 42px;
+	width: 100%;
+	max-height: 42spx;
+	height: 100%;
+	}
+	.BG1{
+		max-height: 700px;
+	}
+	.block2 .PUBG2{
+		display: none;
+	}
+		.block2 .q{
+		display: none;
+	}
+	section, .block2, .block3{
+		max-width: 350px;
+	} 
+	.block3 article{
+		max-height: 800px;
+	}
+	.block3 article a p{
+		min-height: 200px;
+		min-width: 300px;
+	}
+	footer{
+		max-width: 350px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.block3 input{
+		max-width: 300px;
+	}
+	.sites{
+			transform: rotate(-90deg);
+			max-width: 100px;
+			width: 100%
+	}
+	.sites a, img{
+		max-width: 24px;
+	}
+}

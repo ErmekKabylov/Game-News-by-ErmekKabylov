@@ -1,0 +1,34 @@
+<table>
+                    <tr>
+                        <td> 
+                            <center><img src="img/nexttop.png" width="100" height="100" alt=""></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="VID2">
+                            <a href="https://www.youtube.com/watch?v=R_dy5HDO1K8">
+                                <center><img src="img/VID1.png"  alt="#"></center>
+                            </a><br>
+                            <a href="" class="VGh1">
+                                ВИДЕОИГРЫ
+                            </a><br>
+                            <a href="https://www.youtube.com/watch?v=R_dy5HDO1K8" class="name1"><p>Халява: на ПК раздают веселую стратегию Totally Accurate Battle Simulator</p></a><hr>
+                        </div><br>
+                        <div class="VID2">
+                            <a href="https://vgtimes.ru/free/63279-halyava-na-pk-razdayut-veseluyu-strategiyu-totally-accurate-battle-simulator.html">
+                                <center><img src="img/VID3.png" alt="#"></center>
+                            </a><br>
+                            <a href="" class="VGh1">
+                                ВИДЕОИГРЫ
+                            </a><br>
+                            <a href="https://vgtimes.ru/free/63279-halyava-na-pk-razdayut-veseluyu-strategiyu-totally-accurate-battle-simulator.html" class="name1"><p>Халява: на ПК раздают веселую стратегию Totally Accurate Battle Simulator</p></a>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center><img src="img/nextbottom.png" width="100" height="100" alt=""></center>
+                        </td>
+                    </tr>
+                </table>
